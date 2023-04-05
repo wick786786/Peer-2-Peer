@@ -12,7 +12,7 @@ const Hero = () => {
          <span>C</span>
          <span>o</span>
          <span>d</span>
-         <span>e.</span>              
+         <span>e...</span>              
        </div>
        
        <div className='text'>

@@ -4,18 +4,19 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Hero from './components/Home'
 import Home from './components/Home'
-import Signup from './components/Home'
-
+import Login from './components/Login'
+import { BrowserRouter,Route,Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-   <div>
-     
-     <Home/> 
-      
-   </div>
+   <BrowserRouter>
+     <Routes>
+      <Route path="/" element={<Home/>}/>
+     <Route path="/Login" element={<Login/>}/>
+    </Routes>
+   </BrowserRouter>
       
   );
 }
